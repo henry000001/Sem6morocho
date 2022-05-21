@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sem6morocho.Insertar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ingrese los siguientes Datos a Modificar" HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="txtcodigo" Placeholder="Ingrese el codigo" Keyboard="Numeric"/>
+            <Entry x:Name="txtnombre" Placeholder="Ingrese el nombre"/>
+            <Entry x:Name="txtapellido" Placeholder="Ingrese el apellido"/>
+            <Entry x:Name="txtedad" Placeholder="Ingrese la edad" Keyboard="Numeric"/>
+            <Grid>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition></RowDefinition>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+                <Button x:Name="btnInsertar" Text="Modificar" Clicked="btnInsertar_Clicked" Grid.Row="0" Grid.Column="0" BackgroundColor="#2196F3" TextColor="White"/>
+                <Button x:Name="btnregresar" Text="Regresar" Clicked="btnregresar_Clicked" Grid.Row="0" Grid.Column="1" BackgroundColor="#2196F3" TextColor="White"/>
+
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

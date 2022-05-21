@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sem6morocho.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Universidad Israel" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Image Source="universidad.jpg" HorizontalOptions="Center"/>
+        <Label Text="Seleccione la opcion " FontSize="Title" Padding="30,10,30,10"/>
+
+        <Button x:Name="btnInsertar" Text="Insertar" Clicked="btnInsertar_Clicked" BackgroundColor="#2196F3" TextColor="White"/>
+        <Button x:Name="btnEliminar" Text="Eliminar" Clicked="btnEliminar_Clicked" BackgroundColor="#2196F3" TextColor="White"/>
+        <Button x:Name="btnActualizar" Text="Actualizar" Clicked="btnActualizar_Clicked" BackgroundColor="#2196F3" TextColor="White"/>
+        <Button x:Name="btnMostrar" Text="Mostrar" Clicked="btnMostrar_Clicked" BackgroundColor="#2196F3" TextColor="White"/>
+
+    </StackLayout>
+
+</ContentPage>
